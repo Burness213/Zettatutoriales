@@ -3,6 +3,7 @@ import { Download, Play, PlayCircle, ShieldCheck, Grid, ArrowRight, ExternalLink
 import { getFeaturedPrograms, getCategories, getPrograms, formatDownloads, getYoutubeVideos } from "@/lib/data";
 
 export const metadata = { title: "Inicio — La Plataforma #1 para Descargar Programas PC" };
+export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   const featured = await getFeaturedPrograms();

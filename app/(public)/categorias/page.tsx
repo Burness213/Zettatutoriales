@@ -3,6 +3,7 @@ import { ArrowRight, TrendingUp, Sparkles, Gift, LayoutGrid } from "lucide-react
 import { getCategories } from "@/lib/data";
 
 export const metadata = { title: "Categorías" };
+export const dynamic = "force-dynamic";
 
 // Map the color from the mock data to specific Tailwind color classes for the UI glow effects
 const getColorClasses = (color: string) => {

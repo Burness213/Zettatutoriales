@@ -2,6 +2,7 @@ import { getPrograms, getCategories } from "@/lib/data";
 import ProgramasClient from "./client";
 
 export const metadata = { title: "Programas" };
+export const dynamic = "force-dynamic";
 
 export default async function ProgramasPage() {
   const programs = await getPrograms();

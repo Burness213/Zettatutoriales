@@ -3,6 +3,7 @@ import { Plus, TrendingUp, Download, FolderOpen, Youtube, Edit, Trash2, Package,
 import { getPrograms, getCategories, getYoutubeVideos } from "@/lib/data";
 
 export const metadata = { title: "Dashboard | Admin" };
+export const dynamic = "force-dynamic";
 
 export default async function AdminDashboard() {
   const programs = await getPrograms();

@@ -3,6 +3,7 @@ import { Play, Youtube, ExternalLink, Calendar, Eye } from "lucide-react";
 import { getYoutubeVideos } from "@/lib/data";
 
 export const metadata = { title: "Videos YouTube" };
+export const dynamic = "force-dynamic";
 
 export default async function YouTubePage() {
   const videos = await getYoutubeVideos();

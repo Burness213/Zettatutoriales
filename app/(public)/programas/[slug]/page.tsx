@@ -4,6 +4,8 @@ import { Download, Star, ShieldCheck, CheckCircle2, ChevronRight, ArrowLeft } fr
 import { getProgramBySlug, getRelatedPrograms, formatDownloads, getCategoryBySlug } from "@/lib/data";
 import { StarRating } from "@/components/StarRating";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const p: any = await getProgramBySlug(slug);

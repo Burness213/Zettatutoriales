@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { ChevronRight, Download, Star, ShieldCheck } from "lucide-react";
 import { getCategoryBySlug, getProgramsByCategory, formatDownloads } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const cat = await getCategoryBySlug(slug);
@@ -79,12 +81,12 @@ export default async function CategoryDetailPage({ params }: { params: Promise<{
                 </div>
                 <h3 className="font-bold text-lg text-white mb-2 leading-tight group-hover:text-[#ff3333] transition-colors">{p.name}</h3>
                 <p className="text-sm text-white/50 line-clamp-2 mb-6 flex-1">{p.description}</p>
-                
+
                 <div className="flex items-center justify-between text-xs text-white/40 mb-4 font-medium">
                   <div className="flex items-center gap-1.5"><Download size={12} /> {formatDownloads(p.downloads)} desc.</div>
                   <div className="flex items-center gap-1.5"><ShieldCheck size={12} className="text-emerald-500" /> Verificado</div>
                 </div>
-                
+
                 <div className="w-full bg-white/5 group-hover:bg-[#ff3333] text-white text-sm font-semibold rounded-lg h-10 flex items-center justify-center gap-2 transition-all duration-300">
                   <Download size={16} /> Ver Detalles
                 </div>
