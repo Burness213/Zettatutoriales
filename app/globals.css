@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FF2E2E;
+  --color-secondary: #1A1A2E;
+  --color-dark: #0A0A0F;
+
+  --color-bg-dark: #0A0A0F;
+  --color-card-dark: #1A1A2E;
+
+  --font-poppins: var(--font-poppins);
+  --font-montserrat: var(--font-montserrat);
+}
+
+@layer base {
+  :root {
+    --bg-dark: #0A0A0F;
+    --card-dark: #1A1A2E;
+    --primary-red: #FF2E2E;
+  }
+  
+  body {
+    background-color: var(--bg-dark);
+    font-family: var(--font-poppins), sans-serif;
+    color: #FFFFFF;
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(255, 46, 46, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 100% 50%, rgba(255, 46, 46, 0.05) 0%, transparent 40%);
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: var(--font-montserrat), sans-serif;
+  }
+}
+
+@layer components {
+  .dot-grid {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  .glass-nav {
+    background: rgba(10, 10, 15, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .hero-gradient {
+    background: radial-gradient(circle at center, rgba(255, 46, 46, 0.12) 0%, transparent 70%);
+  }
+}

@@ -1,0 +1,59 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  name        String
+  icon        String
+  color       String
+  description String
+  programs    Program[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Program {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  name            String
+  icon            String
+  imageUrl        String?  // Cloudinary image URL
+  youtubeUrl      String?  // Video tutorial URL
+  version         String
+  categoryId      String
+  category        Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  size            String
+  downloads       Int      @default(0)
+  rating          Float    @default(5)
+  ratingCount     Int      @default(1)
+  badge           String?
+  badgeColor      String?
+  description     String
+  longDescription String
+  requirements    String   // Stored as JSON string or comma separated
+  tags            String   // Stored as comma separated string
+  releaseDate     String
+  downloadUrl     String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model YoutubeVideo {
+  id          String   @id @default(cuid())
+  videoId     String   @unique
+  title       String
+  thumbnail   String
+  duration    String
+  views       String
+  publishedAt String
+  url         String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

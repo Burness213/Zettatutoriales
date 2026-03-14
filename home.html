@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zetta Tutoriales - La Plataforma #1 para Descargar Programas PC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --bg-dark: #0A0A0F;
+            --card-dark: #1A1A2E;
+            --primary-red: #FF2E2E;
+        }
+        body {
+            background-color: var(--bg-dark);
+            font-family: 'Poppins', sans-serif;
+            color: #FFFFFF;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(255, 46, 46, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 100% 50%, rgba(255, 46, 46, 0.05) 0%, transparent 40%);
+        }
+        h1, h2, h3, h4, .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .dot-grid {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at center, rgba(255, 46, 46, 0.12) 0%, transparent 70%);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF2E2E",
+                        secondary: "#1A1A2E",
+                        dark: "#0A0A0F",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="dot-grid">
+<nav class="sticky top-0 z-50 glass-nav">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-10">
+<a class="flex items-center gap-2 group" href="#">
+<div class="bg-primary p-1.5 rounded-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white text-2xl font-bold fill-1">bolt</span>
+</div>
+<span class="text-xl font-extrabold tracking-tighter font-montserrat">ZETTA <span class="text-primary">TUTORIALES</span></span>
+</a>
+<div class="hidden md:flex items-center gap-8 font-medium text-sm tracking-wide text-gray-300">
+<a class="hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="hover:text-primary transition-colors" href="#">Programas</a>
+<a class="hover:text-primary transition-colors" href="#">Categorías</a>
+<a class="hover:text-primary transition-colors" href="#">YouTube</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden lg:flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">search</span>
+</button>
+<button class="bg-primary hover:bg-red-700 text-white font-bold py-2.5 px-6 rounded-full text-sm transition-all shadow-lg shadow-primary/20">
+                    Descargar
+                </button>
+</div>
+</div>
+</nav>
+<header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-primary text-xs font-bold uppercase tracking-widest mb-8">
+<span class="material-symbols-outlined text-sm">verified</span>
+                Software Seguro &amp; Verificado
+            </div>
+<h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight max-w-4xl mx-auto">
+                La Plataforma #1 para Descargar <span class="text-primary">Programas PC</span>
+</h1>
+<p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-light">
+                Accede a la colección más completa de software profesional, herramientas de sistema y utilidades. Instaladores limpios, rápidos y con tutoriales paso a paso.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+<button class="w-full sm:w-auto bg-primary hover:bg-red-700 text-white px-10 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-3 transition-all transform hover:-translate-y-1 shadow-2xl shadow-primary/30">
+<span class="material-symbols-outlined">grid_view</span>
+                    Ver Programas
+                </button>
+<button class="w-full sm:w-auto border border-white/20 hover:border-primary hover:bg-primary/5 px-10 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-3 transition-all">
+<span class="material-symbols-outlined">play_circle</span>
+                    Ver Canal YouTube
+                </button>
+</div>
+</div>
+</header>
+<section class="py-12 border-y border-white/5 bg-white/[0.02]">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="text-3xl font-bold text-white mb-1 font-montserrat">500+</div>
+<div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Programas</div>
+</div>
+<div class="text-center border-l border-white/5">
+<div class="text-3xl font-bold text-white mb-1 font-montserrat">50K+</div>
+<div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Descargas</div>
+</div>
+<div class="text-center border-l border-white/5">
+<div class="text-3xl font-bold text-white mb-1 font-montserrat">10K+</div>
+<div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Suscriptores</div>
+</div>
+<div class="text-center border-l border-white/5">
+<div class="text-3xl font-bold text-primary mb-1 font-montserrat">100%</div>
+<div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Verificado</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h2 class="text-3xl font-bold mb-4 tracking-tight">Programas <span class="text-primary">Destacados</span></h2>
+<p class="text-gray-400">Las herramientas más descargadas por nuestra comunidad esta semana.</p>
+</div>
+<a class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" href="#">
+                Ver todos <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group bg-[#1A1A2E] border border-white/5 rounded-2xl p-6 transition-all hover:bg-[#252545] hover:border-primary/30">
+<div class="w-14 h-14 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">photo_camera</span>
+</div>
+<h3 class="text-xl font-bold mb-3 font-montserrat text-white">Adobe Creative Cloud</h3>
+<p class="text-gray-400 text-sm mb-8 leading-relaxed">Suite completa de diseño gráfico, edición de video y fotografía profesional.</p>
+<button class="w-full bg-primary/10 group-hover:bg-primary text-primary group-hover:text-white py-3 rounded-xl font-bold transition-all text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">download</span>
+                    Descargar
+                </button>
+</div>
+<div class="group bg-[#1A1A2E] border border-white/5 rounded-2xl p-6 transition-all hover:bg-[#252545] hover:border-primary/30">
+<div class="w-14 h-14 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+</div>
+<h3 class="text-xl font-bold mb-3 font-montserrat text-white">Visual Studio Pro</h3>
+<p class="text-gray-400 text-sm mb-8 leading-relaxed">El mejor IDE para desarrolladores de software y aplicaciones multiplataforma.</p>
+<button class="w-full bg-primary/10 group-hover:bg-primary text-primary group-hover:text-white py-3 rounded-xl font-bold transition-all text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">download</span>
+                    Descargar
+                </button>
+</div>
+<div class="group bg-[#1A1A2E] border border-white/5 rounded-2xl p-6 transition-all hover:bg-[#252545] hover:border-primary/30">
+<div class="w-14 h-14 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">shield</span>
+</div>
+<h3 class="text-xl font-bold mb-3 font-montserrat text-white">Windows 11 Opt</h3>
+<p class="text-gray-400 text-sm mb-8 leading-relaxed">Versión optimizada de Windows para gamers y estaciones de trabajo.</p>
+<button class="w-full bg-primary/10 group-hover:bg-primary text-primary group-hover:text-white py-3 rounded-xl font-bold transition-all text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">download</span>
+                    Descargar
+                </button>
+</div>
+<div class="group bg-[#1A1A2E] border border-white/5 rounded-2xl p-6 transition-all hover:bg-[#252545] hover:border-primary/30">
+<div class="w-14 h-14 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">audio_file</span>
+</div>
+<h3 class="text-xl font-bold mb-3 font-montserrat text-white">Ableton Live 11</h3>
+<p class="text-gray-400 text-sm mb-8 leading-relaxed">Software de creación musical avanzado para productores y artistas.</p>
+<button class="w-full bg-primary/10 group-hover:bg-primary text-primary group-hover:text-white py-3 rounded-xl font-bold transition-all text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">download</span>
+                    Descargar
+                </button>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="relative rounded-3xl overflow-hidden p-12 lg:p-16 border border-white/5">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/20 via-[#1A1A2E] to-[#1A1A2E] z-0"></div>
+<div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-extrabold mb-6 font-montserrat">¿Buscas algo específico?</h2>
+<p class="text-gray-300 text-lg mb-8">Navega por nuestras categorías organizadas para encontrar exactamente el software que necesitas para tu proyecto.</p>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">Edición Video</span>
+<span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">Ofimática</span>
+<span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">Antivirus</span>
+<span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">Diseño 3D</span>
+</div>
+</div>
+<div class="flex lg:justify-end">
+<button class="bg-white text-dark font-black px-12 py-5 rounded-2xl text-xl hover:bg-primary hover:text-white transition-all transform hover:scale-105">
+                        Explorar Categorías
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white/[0.02]">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<div class="flex items-center justify-center gap-2 mb-4 text-primary font-bold uppercase tracking-[0.2em] text-sm">
+<span class="material-symbols-outlined text-xl">play_circle</span>
+                    Aprende con nosotros
+                </div>
+<h2 class="text-4xl font-extrabold font-montserrat">Tutoriales en YouTube</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-2xl overflow-hidden mb-5 border border-white/10">
+<img alt="Tutorial Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAygthvMqMYjJ_omEbTVAegdyEsGvwPwtXDC8CilF-zz3xHxYYWXUcxGpEZ62JiwZG2dLoaUjX4VJOu4dBQbJfFHxFYlZYZ9W7s2e78lihTDX0d1dbWMk6Yoelq0qGX7IiABCoL6sQ28wkAAInb2eWjKyxTlpsP5bbB9Dr6H2T5GdstwcrvHfzcnnazYHpK0BNG0DLChilRMUZo0wt3bpBvYI4OV1RXVpTYiLxVDbo_-Iq2EsWXYwfT00i-SEmShefpKcfoL48XqY1D"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary p-4 rounded-full">
+<span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="text-lg font-bold font-montserrat group-hover:text-primary transition-colors">Cómo instalar Adobe Creative Cloud sin errores</h3>
+<p class="text-gray-500 text-sm mt-2">12k vistas • Hace 2 días</p>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-2xl overflow-hidden mb-5 border border-white/10">
+<img alt="Tutorial Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfR6ew360Zjztfy7CCAO2pJvmPb8eXPcxwZZWSwJ9_d8JQGCL5mNVk6VDOZkxJyiWili8MCyIFI6H75NtA6wX9V6mtnyFLHCBmGPl8CoSPRBVjofbZ_JgoNhYNjbTYn_WYx07oM3RRpDi9oeQWH3N26p2ENAU8PiG3TxOWbV6d6UH01grghzliF1kmPE945eH8FMvj1AYyjtUbalrvDZ2SBnsLtjSKjN9mBOfeyqe_-tTv1yTbVUbeTVB25Sjx3A9bDssuGKS4tyYd"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary p-4 rounded-full">
+<span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="text-lg font-bold font-montserrat group-hover:text-primary transition-colors">Optimiza Windows 11 para Gaming al Máximo</h3>
+<p class="text-gray-500 text-sm mt-2">45k vistas • Hace 1 semana</p>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-2xl overflow-hidden mb-5 border border-white/10">
+<img alt="Tutorial Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV-DfTgG-F7qD4PM427rqWncKKclYvSnwTtZ9Fl7pd2EMF2_aTZehP1Cg_pTBVb_TmzCboroh5pTE3UJ2Zy3kmxiQ-Pg2qpbHksRTTDnQN3-AWXAoXr-GGK2rfb2AIZohD4JPkW6JO-ta9DgJzt7re_lr33xEoZm1syLPn0g0lc7C_JSOdRKcO5kMkyUNfQIqmSTD-o8GR5RD4t3_RoIGlvob8F4HpIDiaHSvyjRWN9O92MYeRkb_S-YUzZQnaj3YO-lhu49p8FRVz"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary p-4 rounded-full">
+<span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="text-lg font-bold font-montserrat group-hover:text-primary transition-colors">Mejores Efectos para Premiere Pro 2024</h3>
+<p class="text-gray-500 text-sm mt-2">8k vistas • Hace 3 días</p>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="text-gray-400 hover:text-white font-bold inline-flex items-center gap-2 pb-1 border-b border-white/10 hover:border-primary transition-all">
+                    Visitar canal oficial
+                    <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+</section>
+<footer class="py-20 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="md:col-span-2">
+<a class="flex items-center gap-2 mb-6" href="#">
+<div class="bg-primary p-1 rounded-lg">
+<span class="material-symbols-outlined text-white text-xl font-bold">bolt</span>
+</div>
+<span class="text-lg font-extrabold font-montserrat">ZETTA TUTORIALES</span>
+</a>
+<p class="text-gray-500 max-w-sm mb-8 leading-relaxed">Tu hub confiable para la descarga de software PC y tutoriales técnicos de alta calidad. 100% verificado y seguro.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">brand_awareness</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">subscriptions</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-montserrat text-sm uppercase tracking-widest">Navegación</h4>
+<ul class="space-y-4 text-gray-500 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Inicio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Programas PC</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Categorías Populares</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Canal de YouTube</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-montserrat text-sm uppercase tracking-widest">Legal</h4>
+<ul class="space-y-4 text-gray-500 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Términos de Uso</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">DMCA</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contacto</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:row justify-between items-center gap-4">
+<p class="text-gray-600 text-xs">© 2024 Zetta Tutoriales. Todos los derechos reservados.</p>
+<div class="flex items-center gap-2 text-[10px] text-gray-700 uppercase tracking-tighter">
+                    Built for Performance
+                </div>
+</div>
+</div>
+</footer>
+
+</body></html>
