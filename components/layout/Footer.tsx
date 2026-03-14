@@ -12,7 +12,9 @@ export default function Footer() {
               <div className="bg-primary p-1 rounded-lg group-hover:scale-110 transition-transform">
                 <Zap className="text-white fill-white" size={20} />
               </div>
-              <span className="text-lg font-extrabold font-montserrat text-white">ZETTA TUTORIALES</span>
+              <span className="text-xl font-black tracking-tighter font-montserrat bg-clip-text text-transparent bg-linear-to-b from-white to-white/70 flex items-center gap-1.5 drop-shadow-md">
+                ZETTA <span className="text-transparent bg-clip-text bg-linear-to-br from-primary via-red-500 to-orange-600 drop-shadow-[0_0_15px_rgba(255,51,51,0.4)]">TUTOS</span>
+              </span>
             </Link>
             <p className="text-gray-500 max-w-sm mb-8 leading-relaxed">
               Tu hub confiable para la descarga de software PC y tutoriales técnicos de alta calidad. 100% verificado y seguro.

@@ -94,9 +94,10 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
 
             <div className="h-px bg-white/10 w-full mb-8" />
 
-            <div className="prose prose-invert prose-p:text-white/60 prose-p:leading-relaxed prose-p:text-lg max-w-none mb-10">
-              <p>{p.longDescription}</p>
-            </div>
+            <div 
+              className="prose prose-invert prose-p:text-white/60 prose-p:leading-relaxed prose-p:text-lg max-w-none mb-10"
+              dangerouslySetInnerHTML={{ __html: p.longDescription }}
+            />
 
             {videoId && (
               <div className="mb-10">

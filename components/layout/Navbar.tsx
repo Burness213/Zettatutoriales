@@ -25,8 +25,11 @@ export default function Navbar() {
             <div className="bg-primary p-1.5 rounded-lg group-hover:scale-110 transition-transform flex items-center justify-center">
               <Zap size={24} className="text-white fill-white" />
             </div>
-            <span className="text-xl font-extrabold tracking-tighter font-montserrat text-white">
-              ZETTA <span className="text-primary">TUTORIALES</span>
+            <span className="text-2xl font-black tracking-tighter font-montserrat bg-clip-text text-transparent bg-linear-to-b from-white to-white/70 flex items-center gap-1.5 drop-shadow-md">
+              ZETTA <span className="text-transparent bg-clip-text bg-linear-to-br from-primary via-red-500 to-orange-600 drop-shadow-[0_0_15px_rgba(255,51,51,0.4)] relative">
+                TUTOS
+                <span className="absolute -bottom-1 left-0 w-full h-1 bg-linear-to-r from-primary/0 via-primary to-primary/0 blur-xs opacity-50"></span>
+              </span>
             </span>
           </Link>
 

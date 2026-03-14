@@ -5,6 +5,7 @@ import { Save, ArrowLeft, UploadCloud } from "lucide-react";
 import Link from "next/link";
 import { updateProgram } from "@/app/actions";
 import { CldUploadWidget } from "next-cloudinary";
+import { RichTextEditor } from "@/components/RichTextEditor";
 
 export default function EditarProgramaForm({ program, categories }: { program: any, categories: any[] }) {
   const router = useRouter();
@@ -227,13 +228,10 @@ export default function EditarProgramaForm({ program, categories }: { program: a
           </div>
 
           <div className="mb-6">
-            <label className="block text-sm font-medium text-slate-300 mb-2">Descripción Larga (Soporta Markdown) *</label>
-            <textarea 
-              required
-              value={formData.longDescription}
-              onChange={(e) => setFormData({...formData, longDescription: e.target.value})}
-              className="w-full bg-[#0f0f0f] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary/50 h-40 resize-none font-mono text-sm"
-              placeholder="# Título&#10;Contenido..."
+            <label className="block text-sm font-medium text-slate-300 mb-2">Descripción Larga (Soporta Colores y Formato) *</label>
+            <RichTextEditor 
+              content={formData.longDescription} 
+              onChange={(html) => setFormData({...formData, longDescription: html})} 
             />
           </div>
         </div>
