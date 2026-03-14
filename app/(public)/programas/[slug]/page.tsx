@@ -96,7 +96,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
 
             <div 
               className="prose prose-invert prose-p:text-white/60 prose-p:leading-relaxed prose-p:text-lg max-w-none mb-10"
-              dangerouslySetInnerHTML={{ __html: p.longDescription }}
+              dangerouslySetInnerHTML={{ __html: p.longDescription || "" }}
             />
 
             {videoId && (
@@ -119,7 +119,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
             )}
 
             <div className="flex flex-wrap gap-2">
-              {p.tags.split(',').map((tag: string) => (
+              {(p.tags || '').split(',').filter(Boolean).map((tag: string) => (
                 <span key={tag} className="text-xs font-medium px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-white/40">
                   #{tag}
                 </span>
@@ -137,7 +137,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
             </h2>
             <div className="bg-[#0f0f0f] border border-white/10 rounded-2xl p-6">
               <ul className="space-y-4">
-                {p.requirements.split(',').map((r: string, idx: number) => (
+                {(p.requirements || '').split(',').filter(Boolean).map((r: string, idx: number) => (
                   <li key={idx} className="flex items-center gap-3 text-white/60 font-medium">
                     <CheckCircle2 size={18} className="text-emerald-500 shrink-0" />
                     {r}
