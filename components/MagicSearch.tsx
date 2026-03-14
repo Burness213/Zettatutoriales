@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { Command } from "cmdk";
 import { Search, Folder, Package, Youtube, HardDrive } from "lucide-react";
 import { useTheme } from "next-themes";
-import { getPrograms, getCategories } from "@/lib/data";
 
 export function MagicSearch() {
   const [open, setOpen] = React.useState(false);
@@ -16,12 +15,17 @@ export function MagicSearch() {
   const [categories, setCategories] = React.useState<any[]>([]);
 
   React.useEffect(() => {
-    // Fetch generic client search data (we can pre-load this or statically generate)
     const load = async () => {
-      const p = await getPrograms();
-      const c = await getCategories();
-      setPrograms(p);
-      setCategories(c);
+      try {
+        const res = await fetch("/api/search");
+        if (res.ok) {
+          const data = await res.json();
+          setPrograms(data.programs || []);
+          setCategories(data.categories || []);
+        }
+      } catch (err) {
+        console.error("Failed to load search data:", err);
+      }
     };
     load();
   }, []);
