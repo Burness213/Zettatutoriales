@@ -4,9 +4,11 @@ import EditarCategoriaForm from "./form";
 
 export const metadata = { title: "Editar Categoría" };
 
-export default async function EditarCategoriaPage({ params }: { params: { id: string } }) {
+export default async function EditarCategoriaPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  
   const category = await prisma.category.findUnique({
-    where: { id: params.id }
+    where: { id }
   });
 
   if (!category) return notFound();
