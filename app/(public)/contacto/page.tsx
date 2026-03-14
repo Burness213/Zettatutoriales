@@ -1,9 +1,7 @@
+"use client";
 import { Mail, MapPin, MessageSquare, Send } from "lucide-react";
 
-export const metadata = {
-  title: "Contacto | Zetta Tutoriales",
-  description: "Ponte en contacto con el equipo de soporte de Zetta Tutoriales.",
-};
+
 
 export default function ContactoPage() {
   return (
