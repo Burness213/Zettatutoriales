@@ -15,8 +15,8 @@ export default function ProgramasClient({ programs, categories }: { programs: an
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const filtered = programs
-    .filter((p) => activeCat === "todos" || p.categorySlug === activeCat || p.category.toLowerCase() === activeCat.toLowerCase())
-    .filter((p) => p.name.toLowerCase().includes(search.toLowerCase()) || p.category.toLowerCase().includes(search.toLowerCase()))
+    .filter((p) => activeCat === "todos" || p.category?.slug === activeCat)
+    .filter((p) => p.name.toLowerCase().includes(search.toLowerCase()) || p.category?.name.toLowerCase().includes(search.toLowerCase()))
     .sort((a, b) => {
       // Dummy logic for sorts
       if (sort === "Más descargados") return b.downloads - a.downloads;
@@ -162,7 +162,7 @@ export default function ProgramasClient({ programs, categories }: { programs: an
                 <div className="p-5 flex-1 flex flex-col pt-4">
                   <h3 className="text-lg font-bold mb-1 leading-tight group-hover:text-primary transition-colors font-montserrat">{p.name}</h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mb-4 flex items-center gap-2">
-                   {p.category}
+                   {p.category?.name}
                 </p>
                 
                 <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-6 flex-1">

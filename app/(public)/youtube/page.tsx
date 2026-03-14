@@ -95,7 +95,7 @@ export default async function YouTubePage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-white mb-2">Zetta Tutoriales Oficial</h2>
               <p className="text-white/50 text-base max-w-xl leading-relaxed">
-                Forma parte de nuestra comunidad en YouTube. Más de 10,000 suscriptores aprendiendo desarrollo web, ciberseguridad y creación de contenido.
+                Forma parte de nuestra comunidad en YouTube. Únete a otros creadores aprendiendo desarrollo web, ciberseguridad y creación de contenido.
               </p>
             </div>
           </div>
